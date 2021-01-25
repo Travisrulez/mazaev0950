@@ -1,0 +1,71 @@
+
+.Shop {
+
+  &__heading {
+
+  }
+
+  &__root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &>div {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  &__add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    input {
+      margin-right: 1rem;
+    }
+  }
+
+  &__content {
+    
+    .ant-table {
+      table{
+        tbody {
+          .active {
+            &>td {
+              background-color: rgba(144, 238, 144, 0.7);
+            }
+          }
+          .disabled {
+            &>td {
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .column-actions {
+
+      i {
+        font-size: 16px;
+        transition: ease .3s;
+
+        &:hover {
+          cursor: pointer;
+          color: $light_red;
+        }
+      }
+
+      .fa-edit {
+        color: $main_bg;
+      }
+
+      .fa-trash {
+        color: $red;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
