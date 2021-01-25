@@ -36,7 +36,6 @@ const Shop = props => {
             title: 'Count',
             dataIndex: 'count',
             key: 'count',
-            sorter: (a, b) => a.count - b.count
         },
         {
             title: 'Status',
